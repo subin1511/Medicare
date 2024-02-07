@@ -12,22 +12,22 @@ const HealthRecord = () => {
                             blood Sugar
                         </div>
                     </div>
-                    <div className="medication">
-                        <div className="medicationText">Medication</div>
-                        <div className="medicationContainer">
-                            <ul className="medicationLis" >
-                                <li >
-                                    <div className="medListText">Parecetamol</div>
-                                    <div className="medListMorn"></div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
                 </div>
+                <div className="medication">                            
+                    <h1 className="health"> Medication</h1>
+                    <div className="medicationContainer">
+                        <ul className="medicationLis" >
+                            <li >
+                                <div className="medListText">Parecetamol</div>
+                                <div className="medListMorn"></div>
+                            </li>
+                        </ul>
 
+                    </div>
+                </div>
+            
             </div>
+
         </div>
     );
 };

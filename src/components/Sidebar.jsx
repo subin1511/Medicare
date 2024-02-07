@@ -27,8 +27,12 @@ const Sidebar = ({children}) => {
             name:"Book Appointment"
         },
         {
-            path:"myAppoint",
+            path:"/myAppoint",
             name:"My Appointment",
+        },
+        {
+            path:"/IotMonitoring",
+            name:"Iot Monitoring",
         },
         {
             path:"/profile",

@@ -6,10 +6,13 @@ import Home from './pages/Home.jsx';
 import HealthRecord from './pages/healthRecord.jsx';
 import bookAppoint from './pages/bookAppoint.jsx';
 import Profile from './pages/profile.jsx';
-
+import  { useState } from 'react';
+import IotMonitoring from './pages/IotMonitoring.jsx';
 
 const App = () => {
+  
   return (
+    
     <BrowserRouter>
       <Sidebar>
         <Routes>
@@ -18,9 +21,12 @@ const App = () => {
           <Route path="/healthRecord" element={<HealthRecord />} />
           <Route path="/bookAppoint" element={<bookAppoint />} />
           <Route path="/profile" element={<Profile />} />
-
+          <Route path="/IotMonitoring" element={<IotMonitoring />} />
         </Routes>
+
       </Sidebar>
+      
+      
     </BrowserRouter>
     
   );
