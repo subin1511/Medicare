@@ -9,7 +9,7 @@ const CircularProgress = ({ percentage }) => {
 
   return (
     <div className='labRecord'> 
-                    <h1 className='health'>Iot Monitoring</h1>
+      <h1 className='health'>Iot Monitoring</h1>
     
     <svg className="progress-ring" width="100" height="100">
       <circle
