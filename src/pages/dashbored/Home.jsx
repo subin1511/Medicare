@@ -1,6 +1,6 @@
 import React,{useState}from 'react';
 // import ToggleButton from './ToggleButton';
-import ToggleTabs from '../components/ToggleTabs';
+import ToggleTabs from '../../components/ToggleTabs';
 const Home = () => {
 //     const [userType, setUserType] = useState('doctor');
     
