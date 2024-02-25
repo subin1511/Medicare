@@ -15,7 +15,7 @@ const handleToggle = (newValue) => {
 };
     return (
         <div>
-            <h1>Home</h1>
+            <h1>Home by ali</h1>
             {/* <div style={{ marginBottom: '20px' }}>
         <ToggleButton
           options={['Doctor', 'Patient']}
