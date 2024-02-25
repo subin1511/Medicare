@@ -1,8 +1,10 @@
 import React from 'react';
 import './healthRecord.css'
+import Sidebar from '../../components/Sidebar';
 const HealthRecord = () => {
     return (
         <div class="healthRecord">
+            <Sidebar>
             <h1>My Records</h1>
             <div className='myRecord'>
                 <div className='labRecord'> 
@@ -43,6 +45,7 @@ const HealthRecord = () => {
                 </div>
             
             </div>
+            </Sidebar>
 
         </div>
     );

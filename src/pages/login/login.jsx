@@ -1,29 +1,55 @@
-import React from 'react';
-import Sidebar from '../../components/Sidebar';
+import React, { useState } from 'react';
+import './login.css'
+import { Link } from 'react-router-dom';
 
+function Login() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle login logic here (e.g., call an API or process locally)
+    console.log('Login:', username, password);
+  };
 
-const LoginPage = () => {
   return (
-    <div>
-      <h2>Login</h2>
-      <form>
-        <label>
-          Username:
-          <input type="text" />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input type="password" />
-        </label>
-        <br />
-        <button type="submit">Login</button>
-        <a href="/register">register</a>
+    <div className="login-container">
+      <form onSubmit={handleSubmit} className="login-form">
+        <div className="form-group">
+          <label htmlFor="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="form-control"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="form-control"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <a href="#" className="forgot-password">Forgot Password?</a>
+        </div>
+        <Link to={'/Home'}>
+                    <button className="login-button">Login</button><br/>
+        </Link>
+        <div className="signup-link">
+        <a href="#">Sign Up</a>
+      </div>
       </form>
-      {/* Removed conditionally rendering of Sidebar */}
+      
     </div>
   );
-};
+}
 
-export default LoginPage;
+export default Login;

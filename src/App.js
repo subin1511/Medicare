@@ -1,17 +1,37 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Dashboard from './pages/dashbored/patientDashboard.jsx';
+import Login from './pages/login/login.jsx';
+import Home from './pages/dashbored/Home.jsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import HealthRecord from './pages/dashbored/healthRecord.jsx';
 
 
-const App = () => {
-  
+
+
+
+const router= createBrowserRouter([
+  {
+    path:'/',
+    element:<div><Login/></div>
+
+  },
+
+
+{
+  path:"/Home" ,
+  element:<div> <Home /></div>
+},
+{
+  path:"/HealthRecord" ,
+  element:<div> <HealthRecord /></div>
+}
+])
+function App() {
   return (
-  
-   <Dashboard />
-
-    
+    <div>
+      <RouterProvider router={router}/>
+    </div>
   );
-};
+}
 
 export default App;

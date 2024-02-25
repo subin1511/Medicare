@@ -1,6 +1,7 @@
 import React,{useState}from 'react';
 // import ToggleButton from './ToggleButton';
 import ToggleTabs from '../../components/ToggleTabs';
+import Sidebar from '../../components/Sidebar';
 const Home = () => {
 //     const [userType, setUserType] = useState('doctor');
     
@@ -15,6 +16,7 @@ const handleToggle = (newValue) => {
 };
     return (
         <div>
+          <Sidebar>
             <h1>Home by ali</h1>
             {/* <div style={{ marginBottom: '20px' }}>
         <ToggleButton
@@ -34,7 +36,7 @@ const handleToggle = (newValue) => {
           onToggle={handleToggle}
         />
       </div>
-
+      </Sidebar>
     </div>
     
         
