@@ -1,5 +1,6 @@
 import React from 'react';
 import './bookAppoint.css'
+import Sidebar from '../../components/Sidebar';
 
 /*firebase code */
 
@@ -54,14 +55,15 @@ function displayDoctors(doctors) {
 
 
 
-const bookAppoint = () => {
+const BookAppoint = () => {
     return (
         <div>
+          <Sidebar>
             <h1>list of Doctor</h1>
             <div id="doctorList"></div>
-
+            </Sidebar>
         </div>
     );
 };
 
-export default bookAppoint;
+export default BookAppoint;
