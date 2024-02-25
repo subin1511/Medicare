@@ -7,7 +7,7 @@ const Profile = () => {
         <div><Sidebar>
             <div><h1>Profile</h1>
             </div>
-            </Sidebar>
+        </Sidebar>
         </div>
     );
 };

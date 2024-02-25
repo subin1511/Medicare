@@ -9,6 +9,7 @@ import MyApointment from './pages/dashbored/MyAppointment.jsx';
 import IotMonitoring from './pages/dashbored/IotMonitoring.jsx';
 import Profile from './pages/dashbored/Profile.jsx';
 import Logout from './pages/dashbored/Logout.jsx';
+import PatientRegistration from './pages/Register/PatientRegister.jsx';
 
 const router= createBrowserRouter([
   {
@@ -16,7 +17,10 @@ const router= createBrowserRouter([
     element:<div><Login/></div>
 
   },
-
+{
+  path:"/Register",
+  element:<div><PatientRegistration /></div>
+},
 
 {
   path:"/Home" ,
