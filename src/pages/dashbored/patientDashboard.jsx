@@ -12,7 +12,7 @@ import PatientProfile from './PatientProfile.jsx';
 
 
 const Dashboard = () => {
-  
+
   return (
     
     <BrowserRouter>
@@ -25,7 +25,6 @@ const Dashboard = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/IotMonitoring" element={<IotMonitoring />} />
         </Routes>
-
       </Sidebar>
     </BrowserRouter>
     
