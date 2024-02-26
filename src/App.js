@@ -10,6 +10,9 @@ import IotMonitoring from './pages/dashbored/IotMonitoring.jsx';
 import Profile from './pages/dashbored/Profile.jsx';
 import Logout from './pages/dashbored/Logout.jsx';
 import PatientRegistration from './pages/Register/PatientRegister.jsx';
+import DoctorRegistration from './pages/Register/DoctorRegister.jsx';
+import RegistrationForm from './pages/Register/MainRegister.jsx';
+
 
 const router= createBrowserRouter([
   {
@@ -18,9 +21,10 @@ const router= createBrowserRouter([
 
   },
 {
-  path:"/Register",
-  element:<div><PatientRegistration /></div>
+  path:"/registrationForm",
+  element:<div><RegistrationForm /></div>
 },
+
 
 {
   path:"/Home" ,
