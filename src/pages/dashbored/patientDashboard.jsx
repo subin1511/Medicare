@@ -4,8 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import  Sidebar  from '../../components/Sidebar';
 import Home from './Home.jsx';
 import HealthRecord from './healthRecord.jsx';
-import BookAppoint from './bookAppoint.jsx';
-import Profile from './profile.jsx';
+import BookAppoint from './BookAppoint.jsx';
 import IotMonitoring from './IotMonitoring.jsx';
 import PatientProfile from './PatientProfile.jsx';
 

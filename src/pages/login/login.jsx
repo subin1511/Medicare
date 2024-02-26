@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
 import { Link } from 'react-router-dom';
-
+import DoctorRegistration from '../Register/PatientRegister';
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -43,9 +43,10 @@ function Login() {
         <Link to={'/Home'}>
                     <button className="login-button">Login</button><br/>
         </Link>
-        <div className="signup-link">
-        <a href="#">Sign Up</a>
-      </div>
+        <Link to={'/Register'}>
+        <button className='signup-link'> Sign Up</button>
+      
+        </Link>
       </form>
       
     </div>
