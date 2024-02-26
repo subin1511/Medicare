@@ -1,0 +1,35 @@
+.profile-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .profile-photo {
+    margin-right: 20px; /* Adjust spacing between photo and details */
+  }
+  
+  .profile-photo img {
+    width: 500px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    border-radius: 50%; /* Make the image round */
+    background-color: black;
+  }
+
+.profile-details{
+    margin-left: 100px;
+}  
+.profileBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn{
+    background-color: #5667FF;
+    height: 30px;
+    width: 90px;
+    border-radius: 25px;
+}
+textarea{
+    width: 500px;
+    height: 100px;
+}
+
