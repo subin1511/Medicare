@@ -8,11 +8,14 @@ import BookAppoint from './pages/dashbored/BookAppoint.jsx';
 import MyApointment from './pages/dashbored/MyAppointment.jsx';
 import IotMonitoring from './pages/dashbored/IotMonitoring.jsx';
 import Profile from './pages/dashbored/Profile.jsx';
-import Logout from './pages/dashbored/Logout.jsx';
+import Logout from './components/Logout.jsx';
 import PatientRegistration from './pages/Register/PatientRegister.jsx';
 import PatientConsult from './pages/doctorPortal/patientConsult.jsx';
 import DoctorRegistration from './pages/Register/DoctorRegister.jsx';
 import RegistrationForm from './pages/Register/MainRegister.jsx';
+import HomeDoctor from './pages/doctorPortal/HomeDoctor.jsx'
+import ProfileDoctor from './pages/doctorPortal/ProfileDoctor.jsx'
+import LogoutDoctor from './pages/doctorPortal/LogoutDoctor.jsx'
 
 const router= createBrowserRouter([
   {
@@ -53,11 +56,23 @@ const router= createBrowserRouter([
 {
   path:"/logOut" ,
   element:<div> <Logout/></div>
-}
+},
  
 {
-  path:"/patientConsult" ,
-  element:<div> <PatientConsult /></div>
+  path:"/HomeDoctor" ,
+  element:<div> <HomeDoctor /></div>
+},
+{
+  path:"ProfileDoctor" ,
+  element:<div> < ProfileDoctor/></div>
+},
+{
+  path:"patientConsult" ,
+  element:<div> < PatientConsult/></div>
+},
+{
+  path:"LogoutDoctor" ,
+  element:<div> < LogoutDoctor/></div>
 }
 
 ])

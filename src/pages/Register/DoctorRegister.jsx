@@ -8,6 +8,7 @@ import {
   Grid,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
+import HomeDoctor from '../doctorPortal/HomeDoctor';
 
 // Validation schema (adjust as needed)
 const validationSchema = Yup.object().shape({
@@ -123,7 +124,7 @@ const DoctorRegistration = () => {
         </Grid>
         {/* Add more fields as needed */}
         <Grid item xs={12}>
-        <Link to={'/Home'}>
+        <Link to={'/HomeDoctor'}>
             <button className="login-button">submit</button><br/>
         </Link>
         </Grid>
