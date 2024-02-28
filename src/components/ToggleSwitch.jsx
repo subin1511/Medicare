@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const ToggleTabs = ({ options, selectedOption, onToggle }) => {
+const ToggleTabs  = ({ options, selectedOption, onToggle }) => {
   const handleClick = (option) => {
     onToggle(option);
   };
@@ -22,4 +22,4 @@ const ToggleTabs = ({ options, selectedOption, onToggle }) => {
   );
 };
 
-export default ToggleTabs;
+export default ToggleTabs ;

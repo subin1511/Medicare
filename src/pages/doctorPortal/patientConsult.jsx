@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import './patientConsult.css'; 
 import { Link } from 'react-router-dom';
+import Sidebar from '../../components/SidebarDoctor';
 
 const PatientConsult = () => {
   const [divs, setDivs] = useState([
@@ -14,7 +15,7 @@ const PatientConsult = () => {
 
   return (
     <div>
-
+      <Sidebar>
     <div className="profile-container">
       <div className="profile-photo">
         <img src="profile.jpg" alt="Profile" />
@@ -46,6 +47,7 @@ const PatientConsult = () => {
         <div key={div.id}>{div.content}</div>
       ))}
     </div>
+    </Sidebar>
   </div>
 
   );
