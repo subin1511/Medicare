@@ -1,15 +1,12 @@
 import React from 'react';
 import Sidebar from '../../components/Sidebar';
-
-const Profile = () => {
-
+const MyApointment = () => {
     return (
-        <div><Sidebar>
-            <div><h1>Profile</h1>
-            </div>
+        <div>
+            <Sidebar>
+            <h2>My Apointments</h2>
             </Sidebar>
         </div>
     );
-};
-
-export default Profile;
+}
+export default MyApointment;
