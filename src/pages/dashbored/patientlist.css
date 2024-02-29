@@ -1,0 +1,51 @@
+.t1,td{
+    text-align: center;
+    font-size: 18px;
+    padding: 22px;
+    padding-right: 100px;
+    padding-left: 70px;
+  }
+  .t1,th{
+    text-align: center;
+    font-size: 22px;
+    padding: 23px;
+    padding-right: 100px;
+    padding-left: 70px;
+  }
+  .t1{
+    column-gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 30px;
+    tr:nth-child(even) {background-color: #f2f2f2;}
+  }
+  .totlPatintContainer {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;/* Adjust width as needed */
+    padding-right: 100px;
+  }
+  
+  .totlPatintContainer1,
+  .totlPatintContainer2 {
+    width: 150px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text1,
+  .text2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .num1,
+  .num2 {
+    font-size: 24px;
+    font-weight: bold;
+  }

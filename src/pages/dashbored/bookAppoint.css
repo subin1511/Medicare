@@ -1,13 +1,16 @@
 .t1,td{
   text-align: center;
-  font-size: 18px
+  font-size: 18px;
+  padding: 22px;
+  padding-right: 100px;
+  padding-left: 20px;
 }
 .t1,th{
   text-align: center;
-  font-size: 22px
-}
-.filter{
-  margin-right: 500px;
+  font-size: 22px;
+  padding: 23px;
+  padding-right: 100px;
+  padding-left: 20px;
 }
 .t1{
   column-gap: 40px;

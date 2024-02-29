@@ -8,7 +8,6 @@ const BookAppoint = () => {
     <div>
       <Sidebar>
       <h1>Doctors List</h1>
-      <h4 className='filter' align="right">Filter </h4>
       <table className='t1'>
         <thead>
           <tr>
