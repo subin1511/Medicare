@@ -1,7 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './healthRecord.css'
 import Sidebar from '../../components/Sidebar';
+
 const HealthRecord = () => {
+    const [divs, setDivs] = useState([
+        { id: 1, content: 'aspirin' }
+      ]);
+    
+      const handleClick = () => {
+        const newDiv = { id: Date.now(), content: 'parecetomol' };
+        setDivs([...divs, newDiv]);
+      };
+      const [showPopup, setShowPopup] = useState(false);
+      
     return (
         <div class="healthRecord">
             <Sidebar>
@@ -32,19 +43,36 @@ const HealthRecord = () => {
                 </div>
                 <div className="medication">                            
                     <h1 className="health"> Medication</h1>
-                    <div className="medicationContainer">
-                        <table>
-                            <tr>
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        </table>
+                    
+                    <div className='divMed'>
+   
+   {divs.map((div) => (
+     
+     <div className="medicine" key={div.id}>
+       <div className="medText">{div.content}</div>
+
+         
+       <div class="checkbox-custom">
+         <input type="checkbox" id="morn" />
+         <input type="checkbox" id="noon" />
+         <input type="checkbox" id="evening" />
+       </div>
+
+     
+
+     
+   </div>
+   ))
+   }
+   <button className="addNew" onClick={handleClick}>add new +</button> 
+
+ </div>
+
 
                     </div>
                 </div>
             
-            </div>
+
             </Sidebar>
 
         </div>
