@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Login from './pages/login/login.jsx';
-import Home from './pages/dashbored/Home.jsx';
+import Home from './pages/dashboard/Home.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import HealthRecord from './pages/dashbored/healthRecord.jsx';
-import BookAppoint from './pages/dashbored/BookAppoint.jsx';
-import MyApointment from './pages/dashbored/MyAppointment.jsx';
-import IotMonitoring from './pages/dashbored/IotMonitoring.jsx';
-import Profile from './pages/dashbored/Profile.jsx';
+import HealthRecord from './pages/dashboard/Home.jsx';
+import BookAppoint from './pages/dashboard/BookAppoint.jsx'
+import MyApointment from './pages/dashboard/MyAppointment.jsx';
+import IotMonitoring from './pages/dashboard/IotMonitoring.jsx';
+import Profile from './pages/dashboard/Profile.jsx';
 import Logout from './components/Logout.jsx';
 import PatientRegistration from './pages/Register/PatientRegister.jsx';
 import PatientConsult from './pages/doctorPortal/patientConsult.jsx';
