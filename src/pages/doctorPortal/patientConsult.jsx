@@ -42,7 +42,7 @@ const PatientConsult = () => {
     <textarea></textarea>
     <h3>Prescription</h3>
     <div>
-      <button onClick={handleClick}>add new +</button>  
+      <button onClick={handleClick}>Duplicate Div</button>
       {divs.map((div) => (
         <div key={div.id}>{div.content}</div>
       ))}
