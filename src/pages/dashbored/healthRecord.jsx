@@ -44,30 +44,15 @@ const HealthRecord = () => {
                 <div className="medication">                            
                     <h1 className="health"> Medication</h1>
                     
-                    <div className='divMed'>
-   
-   {divs.map((div) => (
-     
-     <div className="medicine" key={div.id}>
-       <div className="medText">{div.content}</div>
+                    <div class="inline-container">
+      <div class="text">Paracetamol</div>
+      <div class="circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
 
-         
-       <div class="checkbox-custom">
-         <input type="checkbox" id="morn" />
-         <input type="checkbox" id="noon" />
-         <input type="checkbox" id="evening" />
-       </div>
-
-     
-
-     
-   </div>
-   ))
-   }
-   <button className="addNew" onClick={handleClick}>add new +</button> 
-
- </div>
-
+        </div>
 
                     </div>
                 </div>

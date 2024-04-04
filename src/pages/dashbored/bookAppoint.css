@@ -1,15 +1,22 @@
-.doctor-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
+.t1,td{
+  text-align: center;
+  font-size: 18px;
+  padding: 22px;
+  padding-right: 100px;
+  padding-left: 20px;
+}
+.t1,th{
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  padding-right: 100px;
+  padding-left: 20px;
+}
+.t1{
+  column-gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  tr:nth-child(even) {background-color: #f2f2f2;}
   
-  .doctor-card h2 {
-    margin-top: 0;
-  }
-  
-  .doctor-card p {
-    margin: 5px 0;
-  }
-  
+}

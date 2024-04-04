@@ -9,7 +9,7 @@
   
   .profile-photo img {
     width: 500px; /* Adjust width as needed */
-    height: 500px; /* Adjust height as needed */
+    height: 500px; 
     border-radius: 50%; /* Make the image round */
     background-color: black;
   }
@@ -32,4 +32,64 @@ textarea{
     width: 500px;
     height: 100px;
 }
+
+
+
+
+.divMed{
+  display: flex;
+  flex-direction: column;
+}
+.checkbox-custom label {
+  cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 2px solid #ccc;
+}
+.checkbox-custom input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+.checkbox-custom input[type="checkbox"]:checked + label::after {
+  content: "\2713";
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+}  
+
+.medicine {
+display: flex;
+flex-direction: row;
+margin-right: 20px; /* Adjust as needed */
+}
+
+.medText {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.medTime {
+display: flex;
+align-items: center;
+}
+
+.checkbox-custom {
+margin-left: 10px; /* Adjust as needed */
+}
+.addNew{
+width: 100px;
+}
+
+
 

@@ -5,13 +5,14 @@ import Sidebar from '../../components/SidebarDoctor';
 
 const PatientConsult = () => {
   const [divs, setDivs] = useState([
-    { id: 1, content: 'This is the first div' },
+    { id: 1, content: 'aspirin' }
   ]);
 
   const handleClick = () => {
-    const newDiv = { id: Date.now(), content: 'This is a new div' };
+    const newDiv = { id: Date.now(), content: 'paracetomol' };
     setDivs([...divs, newDiv]);
   };
+  
 
   return (
     <div>
@@ -41,12 +42,36 @@ const PatientConsult = () => {
     <h3>Diagnosis</h3>
     <textarea></textarea>
     <h3>Prescription</h3>
-    <div>
-      <button onClick={handleClick}>Duplicate Div</button>
-      {divs.map((div) => (
-        <div key={div.id}>{div.content}</div>
-      ))}
-    </div>
+  
+
+
+
+<div className='divMed'>
+   
+   {divs.map((div) => (
+     
+     <div className="medicine" key={div.id}>
+       <div className="medText">{div.content}</div>
+
+         
+       <div class="checkbox-custom">
+         <input type="checkbox" id="morn" />
+         <input type="checkbox" id="noon" />
+         <input type="checkbox" id="evening" />
+       </div>
+
+     
+
+     
+   </div>
+   ))
+   }
+   <button className="addNew" onClick={handleClick}>add new +</button> 
+
+ </div>
+
+
+
     </Sidebar>
   </div>
 

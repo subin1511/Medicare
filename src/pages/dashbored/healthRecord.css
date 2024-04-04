@@ -43,57 +43,28 @@ h1.health {
 }
 
 
-.divMed{
+
+
+
+.inline-container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
   }
-  .checkbox-custom label {
-    cursor: pointer;
-
-    width: 30px;
-    height: 30px;
+  
+  .text {
+    margin-right: 10px; /* Adjust spacing */
+  }
+  
+  .circles {
+    display: flex;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color: #eee;
-    border: 2px solid #ccc;
+    background-color: #000; /* Adjust color */
+    margin-right: 5px; /* Adjust spacing */
   }
-  .checkbox-custom input[type="checkbox"]:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 16px;
-    height: 16px;
-    background-color: #007bff;
-    border-radius: 50%;
-  }
-  .checkbox-custom input[type="checkbox"]:checked + label::after {
-    content: "\2713";
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    line-height: 16px;
-  }  
-
- .medicine {
-  display: flex;
-  flex-direction: row;
-  margin-right: 20px; /* Adjust as needed */
-}
-
-.medText {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.medTime {
-  display: flex;
-  align-items: center;
-}
-
-.checkbox-custom {
-  margin-left: 10px; /* Adjust as needed */
-}
-.addNew{
-  width: 100px;
-}
+  
