@@ -1,15 +1,21 @@
 import React from 'react';
 import './App.css';
 import Login from './pages/login/login.jsx';
-import Home from './pages/dashbored/Home.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './pages/dashboard/Home.jsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import IotMonitoring from './pages/dashboard/IotMonitoring.jsx';
 import HealthRecord from './pages/dashbored/healthRecord.jsx';
 import BookAppoint from './pages/dashbored/bookAppoint.jsx';
 import DocBookProfile from './pages/dashbored/docBookProfile.jsx';
 import MyApointment from './pages/dashbored/MyAppointment.jsx';
+<<<<<<< HEAD
 import IotMonitoring from './pages/dashbored/IotMonitoring.jsx';
 import Profile from './pages/dashbored/profile.jsx';
 import Logout from './components/Logout.jsx';
+=======
+import Profile from './pages/dashbored/Profile.jsx';
+import Logout from './pages/dashbored/Logout.jsx';
+>>>>>>> f1df8c48c82962356b4171b9543d47751d7760da
 import PatientRegistration from './pages/Register/PatientRegister.jsx';
 import PatientConsult from './pages/doctorPortal/patientConsult.jsx';
 import DoctorRegistration from './pages/Register/DoctorRegister.jsx';
@@ -62,6 +68,10 @@ const router= createBrowserRouter([
   path:"/logOut" ,
   element:<div> <Logout/></div>
 },
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> f1df8c48c82962356b4171b9543d47751d7760da
 {
   path:"/HomeDoctor" ,
   element:<div> <HomeDoctor /></div>

@@ -15,7 +15,7 @@ const Sidebar = ({children}) => {
    
     const menuItem=[
         {
-            path:"/",
+            path:"/Home",
             name:"Home"
         },
         {
@@ -39,7 +39,7 @@ const Sidebar = ({children}) => {
             name:"Profile"
         },
         {
-            path:"/logOut",
+            path:"/",
             name:"Log out"
         }
     ]

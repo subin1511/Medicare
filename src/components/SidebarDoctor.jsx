@@ -27,7 +27,7 @@ const Sidebar = ({children}) => {
             name:"Profile"
         },
         {
-            path:"/LogoutDoctor",
+            path:"/",
             name:"Logout"
         }
     ]

@@ -57,7 +57,7 @@ const DoctorRegistration = () => {
       setSubmitting(false);
     },
   });
-
+  
   return (
     <form onSubmit={formik.handleSubmit}>
       <Grid container spacing={2}>

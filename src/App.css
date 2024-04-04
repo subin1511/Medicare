@@ -7,6 +7,21 @@
 .container{
     display:flex;
 }
+.login-container {
+  background-image: url('C:\Users\subin\Downloads\logo.jpg'); /* Replace 'background.jpg' with your image file */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensure the background covers the entire viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add any additional styling you need for the login form */
+.login-form {
+  /* Your existing styles */
+}
+
 main{
     width: 100%;
     padding: 20px;
