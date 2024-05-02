@@ -4,7 +4,9 @@ const bodyParser = require("body-parser"); // Changed from bodyparser to bodyPar
 const app = express();
 // require("dotenv").config();
 
-const port = 8080;
+
+const port = process.env.PORT || 3000;
+
 const dbconnection = require("./utilis/db.js");
 
 const userroutes = require("./routes/userRoutes.js");
@@ -40,6 +42,6 @@ app.use("/api/paypal", require("./routes/api/paypal.js"));
 
 dbconnection;
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0",() => {
   console.log(`Port is listening at local host ${port}`);
 });
