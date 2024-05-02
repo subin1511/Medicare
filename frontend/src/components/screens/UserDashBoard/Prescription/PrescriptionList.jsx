@@ -8,6 +8,9 @@ import moment from "moment";
 function PrescriptionList() {
   const { currentUser } = useContext(UserContext);
 
+  
+
+
   const params = new URLSearchParams(window.location.search);
 
   const [prescriptions, setPrescription] = useState([]);
@@ -78,6 +81,7 @@ function PrescriptionList() {
   };
 
   useEffect(() => {
+    console.log(localStorage.getItem("userType"))
     getPrescription();
     getPatients();
     getDoctors();
@@ -88,10 +92,12 @@ function PrescriptionList() {
       <div className="page-wrapper">
         <div className="content">
           <h4 className="page-title">Prescription</h4>
+          {localStorage.getItem("userType")==="Admin" || localStorage.getItem("userType")==="Doctor" ? 
+          
           <form
             action="/prescriptions"
             name="prescriptionFilter"
-            className={currentUser.userType == "Patient" ? "hide" : ""}
+            className={localStorage.getItem("userType") == "Patient" ? "hide" : ""}
           >
             <div className="row filter-row">
               <div className="col-sm-4 col-md-4 mt-2">
@@ -119,7 +125,7 @@ function PrescriptionList() {
                   })}
                 </select>
               </div>
-              {currentUser.userType == "Admin" && (
+              {localStorage.getItem("userType")== "Admin" && (
                 <div className="col-sm-4 col-md-4 mt-2">
                   <select
                     name="doctorId"
@@ -154,6 +160,7 @@ function PrescriptionList() {
               </div>
             </div>
           </form>
+          :""}
           <PrescriptionTable prescriptionList={prescriptions} />
         </div>
       </div>

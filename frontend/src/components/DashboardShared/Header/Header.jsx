@@ -49,6 +49,7 @@ const Header = ({ open, handleDrawerOpen, headerTitle }) => {
 
   const handleSignOut = () => {
     signOutUser();
+    localStorage.clear()
     handleClose(null);
   };
 

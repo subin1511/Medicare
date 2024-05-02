@@ -82,13 +82,13 @@ function AppointmentForm(props) {
               if (props.patientSelected == patient._id) {
                 return (
                   <option key={i} value={patient._id} selected>
-                    {patient.userId.firstName} {patient.userId.lastName}
+                    {currentUser.firstName} {currentUser.lastName}
                   </option>
                 );
               } else {
                 return (
                   <option key={i} value={patient._id}>
-                    {patient.userId.firstName} {patient.userId.lastName}
+                                       {currentUser.firstName} {currentUser.lastName}
                   </option>
                 );
               }

@@ -16,6 +16,9 @@ const dashboardroutes = require("./routes/DashboardRoutes");
 const patientroutes = require("./routes/patientRoutes");
 const AppointmentRoute = require("./routes/AppointmentRoute.js");
 const InvoiceRoute = require("./routes/InvoiceRoute.js");
+const iotCrud = require("./routes/iotCrud.js");
+
+
 
 app.use(bodyParser.json()); // Use bodyParser.json() for JSON parsing
 app.use(cors());
@@ -30,6 +33,8 @@ app.use("/api", dashboardroutes);
 app.use("/api", patientroutes);
 app.use("/api", AppointmentRoute);
 app.use("/api", InvoiceRoute);
+app.use("/api", iotCrud);
+
 
 app.use("/api/paypal", require("./routes/api/paypal"));
 
