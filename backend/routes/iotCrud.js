@@ -2,10 +2,10 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get('/temperature', (req, res) => {
+router.post('/temperature', (req, res) => {
     currentTemperature = req.body;
     console.log('Received temperature:', currentTemperature);
-    return "succccceesss"
+    res.sendStatus(200);
   });
 
 module.exports = router;
