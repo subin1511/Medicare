@@ -7,6 +7,10 @@ const IotSchema = new Schema({
     type: String,
    
   },
+  pulse: {
+    type: String,
+   
+  },
 });
 
 const Iot = mongoose.model("Iot", IotSchema);
