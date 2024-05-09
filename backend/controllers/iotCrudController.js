@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 
 const postTempData = async (req, res) => {
   try {
+    console.log(req.body)
     const temp = await Iot.updateOne({_id:new mongoose.Types.ObjectId("6633e52dd15e5fa72fab2ec6")},{ $set: req.body })
     console.log(temp)
     res.json({"meassage":"successfully updated temperature and pulse "});
