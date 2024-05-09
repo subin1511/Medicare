@@ -10,6 +10,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
+import DeviceHubOutlinedIcon from "@mui/icons-material/DeviceHubOutlined";
+
 import AccessibleForwardIcon from "@mui/icons-material/AccessibleForward";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import { NavLink, Link, useLocation } from "react-router-dom";
@@ -175,6 +177,40 @@ export default function Sidebar({ open, handleDrawerClose, handleDrawerOpen }) {
             </ListItemIcon>
             <ListItemText
               primary={"Appointments"}
+              sx={{ opacity: open ? 1 : 0 }}
+            />
+          </ListItemButton>
+        </ListItem>
+
+        <ListItem key={"Iotmonitoring"} disablePadding sx={{ display: "block" }}>
+          <ListItemButton
+            component={NavLink}
+            to="/iotmonitoring"
+            style={{ textDecoration: "none", color: "white" }}
+            selected={selectedItem == "iotmonitoring" ? true : false}
+            sx={{
+              minHeight: 48,
+              justifyContent: open ? "initial" : "center",
+              px: 2.5,
+              "&.Mui-selected": {
+                backgroundColor: "#1b4f32",
+              },
+              "&.Mui-selected:hover": {
+                backgroundColor: "#1b4f32",
+              },
+            }}
+          >
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 3 : "auto",
+                justifyContent: "center",
+              }}
+            >
+              <DeviceHubOutlinedIcon style={{ color: "#fff" }} />
+            </ListItemIcon>
+            <ListItemText
+              primary={"Iotmonitoring"}
               sx={{ opacity: open ? 1 : 0 }}
             />
           </ListItemButton>

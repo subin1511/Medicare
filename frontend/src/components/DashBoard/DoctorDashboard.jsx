@@ -64,7 +64,7 @@ export default function DoctorDashboard() {
       console.log("aptms", aptms);
 
       setBookedAppointments(aptms);
-      // console.log(aptms);
+      console.log(aptms);
     }
 
     // else {

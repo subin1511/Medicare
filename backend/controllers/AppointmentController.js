@@ -73,7 +73,7 @@ const getAppointments = async (req, res) => {
             },
           });
       } else if (req.sender.userType == "Patient") {
-        console.log("patientId", req.sender.patientId);
+        console.log("patientIdvvv", req.sender.patientId);
         let query = {
           isTimeSlotAvailable: false,
           completed: false,
@@ -99,6 +99,8 @@ const getAppointments = async (req, res) => {
             },
           });
       } else if (req.sender.userType == "Doctor") {
+        console.log("patientIdvvv", req.sender.doctorId);
+
         appointments = await Appointment.find({
           isTimeSlotAvailable: false,
           completed: false,
@@ -205,6 +207,7 @@ const getAppointmentById = async (req, res) => {
   
   try {
     const appointment = await Appointment.findById(req.params.id).lean();
+    console.log(req.params.id,"niggggg")
     appointment.doctorDetails = await Doctor.findById(appointment.doctorId);
     appointment.patientDetails = await Patient.findById(appointment.patientId);
     res.json({ message: "success", appointment: appointment });

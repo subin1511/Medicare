@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import Dashboard from "./components/DashBoard/DashBoard";
 import { UserContext } from "./Context/UserContext";
 import AdminDashboard from "./components/DashBoard/AdminDashBoard";
@@ -34,6 +34,8 @@ import PrescriptionList from "./components/screens/UserDashBoard/Prescription/Pr
 import Prescription from "./components/screens/UserDashBoard/Prescription/Prescription";
 import Success from "./components/screens/UserDashBoard/Prescription/Success";
 import Cancel from "./components/screens/UserDashBoard/Prescription/Cancel";
+import IotMonitoring from "./components/screens/UserDashBoard/IotMonitoring/IotMonitoring";
+import Iot from "./components/screens/UserDashBoard/IotMonitoring/Iot";
 
 function ProtectedAdminRoute({ children }) {
   const { currentUser } = useContext(UserContext);
@@ -104,12 +106,14 @@ export default function PageRoutes() {
           <Route path="add" element={<Adddoctor />} />
           <Route path="edit/:id" element={<Editdoctor />} />
         </Route>
+        <Route path="iotmonitoring" element={<Iot />}> 
+          <Route index element={<IotMonitoring />} />
+        </Route>
 
         <Route path="medicines" element={<Medicine />}>
           <Route
-            index
+             index
             element={
-           
                 <MedicineList />
             }
           />
